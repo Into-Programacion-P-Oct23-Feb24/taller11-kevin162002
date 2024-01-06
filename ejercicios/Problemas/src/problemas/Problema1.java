@@ -23,12 +23,12 @@ public class Problema1 {
        String cadena = "";
         for (int i = 0; i < datos.length; i++) {
             for (int j = 0; j < datos[i].length; j++) {
-                if(i %2 <= 0){
-                    cadena = String.format("%s%s\t\n", cadena, datos[i][j]);
-                }
+                if(datos[i][j]%2==0){
+                  cadena=String.format("%s\n%d", cadena,datos[i][j]);
+              }      
             }
         }
-        System.out.println(cadena);
+          System.out.print(cadena);
     }
     
 }
